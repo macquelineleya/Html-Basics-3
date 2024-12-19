@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 100px 100px 100px; */
+            /* fr-i fraction for entire width */
+            height: 100vh;
+            grid-template-columns: repeat(3,1fr);
+            /* grid-template-rows: 100px 250px 100px; */
+        }
+        .item{
+            /* height: 50px;
+            width: 50px; */
+            border: 2px solid black;
+            margin: 7px;
+            border-radius: 20px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">one</div>
+        <div class="item item0">two</div>
+        <div class="item">three</div>
+        <div class="item">four</div>
+        <div class="item">five</div>
+        <div class="item">six</div>
+        <div class="item item2">seven</div>
+        <div class="item item3">eight</div>
+    </div>
+</body>
+</html>
